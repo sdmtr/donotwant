@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        user-select: none;
+        cursor: default;
+      }
+
+      a {
+        cursor: pointer;
+        color: #5098e0;
+        transition: all 0.2s ease-in-out;
+      }
+
+      a:hover {
+        color: #79bcff;
+      }
+
+      html, body, ul, li {
+        margin: 0;
+        padding: 0;
+      }
+
+      h1, h2, h3, h4, h5, h6, p { margin-top: 0; }
+
+      img { border: 0; }
+
+      input, textarea, select {
+        font-size: 110%;
+        line-height: 1.1;
+      }
+
+      .clearfix:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+      }
+      .clearfix { display: inline-block; }
+      /* start commented backslash hack \*/
+      * html .clearfix { height: 1%; }
+      .clearfix { display: block; }
+      /* close commented backslash hack */
+
+      body {
+         font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+         font-size: small;
+         font-weight: normal;
+         color: #333;
+         background-color: #fff;
+      }
+
+      #container {
+        width: 15em;
+        margin: 0;
+      }
+
+      #container h1 {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1em 1em 0;
+        text-align: center;
+      }
+
+      #container ul li {
+        list-style: none;
+      }
+
+      #container ul li a.dnw-option {
+        padding: 0.7em;
+        background-color: #333;
+        color: #fff;
+        border-bottom: 1px solid #000;
+        display: block;
+        cursor: pointer;
+      }
+
+      #container ul li a.dnw-option:hover {
+        background-color: #222;
+      }
+
+      #container ul li a.dnw-option:before {
+        content: "";
+        display: inline-block;
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 0.5em;
+        width: 0.5em;
+        height: 0.5em;
+        position: relative;
+        
+        margin-right: 0.5em;
+      }
+
+      #container ul li:last-of-type {
+        border-bottom: none;
+      }
+
+      div#sections {
+        width: 15em;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      section {
+        width: 15em;
+        overflow: scroll;
+        display: inline-block;
+        white-space: normal;
+      }
+
+      section p {
+        padding: 0.3em 1em 1em;
+      }
+
+      section#sending {
+        text-align: center;
+      }
+
+      section#sending img {
+        width: 50%;
+        margin: 1em;
+      }
+
+      div#bar {
+        background-color: #eee;
+      }
+
+      div#bar ul {
+        float: right;
+      }
+
+      div#bar ul li {
+        display: inline-block;
+        float: left;
+      }
+
+      div#bar ul li a {
+        padding: 0.6em 0.5em 0;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      div#bar ul li a img {
+        height: 1.1em;
+        cursor: pointer;
+      }
+
+      div#bar p {
+        padding: 1em 1em;
+        float: left;
+        margin: 0;
+        font-size: 0.5em;
+      }
+
+      a.btn {
+        margin: 0;
+        padding: 0.5em 1em;
+        font-weight: bold;
+        font-size: x-small;
+        border-radius: 0.25em;
+        background-color: #5098e0;
+        color: #fff;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.1);
+        transition: all 0.2s ease-in-out;
+      }
+
+      a.btn:hover {
+        background-color: #79bcff;
+      }
+
+      a.btn:active {
+        position: relative;
+        top: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Do Not Want!</h1>
+
+      <div id="sections">
+        <section id="options">
+          <ul>
+            <li><a class="dnw-option" data-reason="I%20do%20NOT%20want%20noisy%20ads!">Noisy ads</a></li>
+            <li><a class="dnw-option" data-reason="I%20do%20NOT%20want%20scrolljacking!">Scrolljacking</a></li>
+            <li><a class="dnw-option" data-reason="I%20do%20NOT%20want%20autoplaying%20content!">Autoplaying content</a></li>
+            <li><a class="dnw-option" data-reason="I%20do%20NOT%20want%20newsletter%20begging!">Newsletter begging</a></li>
+            <li><a class="dnw-option" data-reason="I%20do%20NOT%20want%20popups!">Popups</a></li>      
+          </ul>
+        </section>
+
+        <section id="sending">
+          <img src="thumbsup.png">
+          <p>Awesome, that'll show 'em!</p>
+        </section>
+
+        <section id="settings">
+          <p>
+            I'm afraid there aren't really any settings to speak of, but if you like you can <a id="reset">reset your unwants</a>. <span style="display: none;">Hooray, you did it!</span>
+          </p>
+          <center><a class="btn center" data-return="options">Finished</a></center>
+        </section>
+
+        <section id="info">
+          <p>
+            Do Not Want! sends a little ping to this site's analytics script to register your displeasure with things like autoplaying content, popups, and noisy ads. <a tabindex="-1" href="http://google.com" target="_blank">Want to know more?</a>
+            <center><a class="btn center" data-return="options">Got it</a></center>
+          </p>
+        </section>
+      </div>
+
+      <div id="bar" class="clearfix">
+        <p><span id="unwants">0</span> unwants</p>
+        <ul>
+          <li><a class="bar-option" data-option="settings"><img src="gear.png"></a></li>
+          <li><a class="bar-option" data-option="info"><img src="info.png"></a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="jquery.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
