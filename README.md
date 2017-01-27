@@ -14,7 +14,7 @@ In theory, whoever is responsible for overseeing the site's analytics will notic
 
 ## Screenshots
 
-![Main popup](master/screenshots/popup.png) ![Success!](master/screenshots/success.png) ![Info](master/screenshots/info.png) ![Settings](master/screenshots/settings.png)
+![Main popup](screenshots/popup.png) ![Success!](screenshots/success.png) ![Info](screenshots/info.png) ![Settings](screenshots/settings.png)
 
 ## Future plans
 
