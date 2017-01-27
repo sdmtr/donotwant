@@ -27,6 +27,6 @@ If there's any interest in this extension, I'd like to explore a few ideas for a
 * Give people the option to outright block sites with a large number of unwants in the same way that Google currently stops you from browsing unsafe sites - hopefully if enough people were to actually use the extension, sites that have these anti-features will see a drop in traffic
 
 ## Credits
-Original idea courtesy [dejayc on reddit](https://www.reddit.com/r/Showerthoughts/comments/5q5yjk/i_wish_there_was_a_way_for_me_to_tell_a_website/dcwojfe/).
+Original idea courtesy [dejayc](https://www.reddit.com/r/Showerthoughts/comments/5q5yjk/i_wish_there_was_a_way_for_me_to_tell_a_website/dcwojfe/), additional ideas courtesy [phpdevster](https://www.reddit.com/r/Showerthoughts/comments/5q5yjk/i_wish_there_was_a_way_for_me_to_tell_a_website/dcx56rj/).
 
 Thumbs Up icon, Gear icon, and Info icon made by [Freepik](http://www.freepik.com) from [www.flaticon.com](http://www.flaticon.com), licensed under [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
