@@ -1,8 +1,10 @@
 # Do Not Want!
 
+***A Chrome extension to help you protest against website anti-features.***
+
 ## What it does
 
-Ever get sick and tired of sites which insist on autoplaying video and audio content, display noisy ads, constantly beg you to join their newsletter, hijack your scrollbar, or spawn endless popups? Well, here's your chance to register your displeasure by shitting up that site's analytics in the hope that the webmaster takes notice.
+Ever get sick and tired of sites which insist on autoplaying video and audio content, display noisy ads, constantly beg you to join their newsletter, hijack your scrollbar, or spawn endless popups? Well, here's your chance to register your displeasure by shitting up that site's analytics.
 
 ## How it works
 
