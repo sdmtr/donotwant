@@ -12,6 +12,10 @@ Do Not Want! detects whether the page you're visiting is using Google Analytics 
 
 In theory, whoever is responsible for overseeing the site's analytics will notice traffic coming from a new campaign source called "DO NOT WANT!" with campaign names like "I do NOT want noisy ads!" and "I do NOT want newsletter begging!" To be frank, in reality they probably won't notice at first, but if enough people do it then eventually there'll be enough data for those campaigns to show up visibly in the site's reporting.
 
+## Screenshots
+
+![Main popup](master/screenshots/popup.png) ![Success!](master/screenshots/success.png) ![Info](master/screenshots/info.png) ![Settings](master/screenshots/settings.png)
+
 ## Future plans
 
 If there's any interest in this extension, I'd like to explore a few ideas for actually making it useful. Here's a brief list of stuff that's bouncing around my head at the moment:
