@@ -18,10 +18,15 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   $('.dnw-option').click(function() {
-    var $reason = $(this).data('reason');
+    var reason = $(this).data('reason');
 
-    // now you actually have to do stuff
-    console.log(analytics_method, $reason);
+    if (analytics_method != "none") {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        chrome.tabs.sendMessage(tabs[0].id, {action: "send_analytics", reason: reason});
+      });
+    } else {
+      // handle no analytics
+    }
 
     show_section('sending');
     unwants++;
@@ -32,13 +37,13 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   $('.bar-option').click(function() {
-    var $option = $(this).data('option');
-    show_section($option);
+    var option = $(this).data('option');
+    show_section(option);
   });
 
   $('.btn').click(function() {
-    var $return = $(this).data('return');
-    show_section($return);
+    var which = $(this).data('return');
+    show_section(which);
   });
 
   $('#reset').click(function() {
