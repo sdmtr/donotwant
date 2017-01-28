@@ -25,6 +25,7 @@ If there's any interest in this extension, I'd like to explore a few ideas for a
 * Record (with permission, and anonymously) when people send unwants, and maintain a database of sites that are regularly unwanted
 * Using that data, show warning tooltips for any links on the current page which point to sites that have a large number of unwants
 * Give people the option to outright block sites with a large number of unwants in the same way that Google currently stops you from browsing unsafe sites - hopefully if enough people were to actually use the extension, sites that have these anti-features will see a drop in traffic
+* Provide an in-built way to block a lot of these anti-features, e.g disable autoplaying HTML5 objects, detect and disable common newsletter begging Wordpress plugins, etc
 
 ## Credits
 Original idea courtesy [dejayc](https://www.reddit.com/r/Showerthoughts/comments/5q5yjk/i_wish_there_was_a_way_for_me_to_tell_a_website/dcwojfe/), additional ideas courtesy [phpdevster](https://www.reddit.com/r/Showerthoughts/comments/5q5yjk/i_wish_there_was_a_way_for_me_to_tell_a_website/dcx56rj/).
