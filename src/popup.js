@@ -37,11 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   $('.bar-option').click(function() {
+    $('.bar-option').removeClass('active');
+    $(this).addClass('active');
     var option = $(this).data('option');
     show_section(option);
   });
 
   $('.btn').click(function() {
+    $('.bar-option').removeClass('active');
     var which = $(this).data('return');
     show_section(which);
   });

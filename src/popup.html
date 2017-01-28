@@ -109,7 +109,7 @@
 
       section {
         width: 15em;
-        overflow: scroll;
+        overflow: hidden;
         display: inline-block;
         white-space: normal;
       }
@@ -149,6 +149,15 @@
       div#bar ul li a img {
         height: 1.1em;
         cursor: pointer;
+        opacity: 0.5;
+      }
+
+      div#bar ul li a:hover img {
+        opacity: 1;
+      }
+
+      div#bar ul li a.active img {
+        opacity: 1;
       }
 
       div#bar p {
