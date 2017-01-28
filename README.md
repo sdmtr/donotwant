@@ -1,6 +1,6 @@
 # Do Not Want!
 
-***A Chrome extension to help you protest against website anti-features.***
+***A [Chrome extension](https://chrome.google.com/webstore/detail/do-not-want/pkejgbaojajbaimhneomoklkcejanpfd) to help you protest against website anti-features.***
 
 ## What it does
 
@@ -11,6 +11,20 @@ Ever get sick and tired of sites which insist on autoplaying video and audio con
 Do Not Want! detects whether the page you're visiting is using Google Analytics (and what version it is), and if so it injects a script into the document which pings the GA backend with some fake [utm (urchin tracking module)](https://support.google.com/analytics/answer/1033863?hl=en) data that registers your displeasure.
 
 In theory, whoever is responsible for overseeing the site's analytics will notice traffic coming from a new campaign source called "DO NOT WANT!" with campaign names like "I do NOT want noisy ads!" and "I do NOT want newsletter begging!" To be frank, in reality they probably won't notice at first, but if enough people do it then eventually there'll be enough data for those campaigns to show up visibly in the site's reporting.
+
+## Installation
+
+The easiest way is to just [get it from the Chrome Store](https://chrome.google.com/webstore/detail/do-not-want/pkejgbaojajbaimhneomoklkcejanpfd).
+
+Alternatively, if you're a superleet coder who does nothing by halves, you can install it manually:
+
+  1. Either clone this repo to your machine or download a ZIP copy (click the green "Clone or download" button on this page and choose "Download ZIP", make sure you remember to actually unpack the ZIP file once you've downloaded it)
+  2. Open Chrome and navigate to the Extensions page (chrome://extensions/)
+  3. If it isn't already active, check the "Developer mode" checkbox at the top of the page
+  4. Click "Load unpacked extension..."
+  5. Navigate to wherever you saved the repo or unpacked the ZIP archive, and select the "src" directory 
+
+Personally I'd just get it from the Chrome Store.
 
 ## Screenshots
 
